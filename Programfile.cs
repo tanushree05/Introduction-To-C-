@@ -9,6 +9,30 @@ namespace program.Introduction_To_C_Sharp
     {
         static void Main()
         {
+          
+            int a = 10;
+            float b = a;
+                                        //implicit - int to float
+            Console.WriteLine(a);//10
+            Console.WriteLine(b);//10
+
+            double c = 10.99;
+                              //explicit -double to int 
+            int d = (int)c;
+
+            Console.WriteLine(c);
+            Console.WriteLine(d);
+
+
+           
+
+           Console.WriteLine("Enter age :");//initially the program take value in String 
+
+            int age= Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Age="+age);
+            
+
             int val1 = 10;
             long val2 = 10010;
             float val3 = 1.05f;
@@ -24,6 +48,7 @@ namespace program.Introduction_To_C_Sharp
             Console.WriteLine("val5=" + val5);
             Console.WriteLine("val6=" + val6);
             Console.WriteLine("val7=" + val7);
+          
 
         }
     }
